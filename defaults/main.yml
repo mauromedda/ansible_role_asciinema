@@ -1,0 +1,6 @@
+---
+# defaults file for ansible_role_asciinema
+
+asciinema_installed: true # Default: true. Install asciinema if absent
+
+asciinema_state: "{{ 'present' if asciinema_installed==true else 'absent' }}"

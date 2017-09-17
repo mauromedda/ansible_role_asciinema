@@ -1,0 +1,11 @@
+---
+# tasks file for ansible_role_asciinema
+
+- name: "ASCIINEMA | {{ asciinema_state }}"
+  yum:
+    name: asciinema
+    state: "{{ asciinema_state }}"
+  tags:
+    - install
+    - asciinema
+    - uninstall
